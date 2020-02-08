@@ -9,6 +9,13 @@ lto = "thin"
 debug = true
 
 [dependencies]
-sled = { version = "0.25.0", features = ["compression"] }
-rocksdb = "0.12.3"
+sled = { version = "0.31.0", features = ["compression"] }
+
 jemallocator = "0.3.2"
+
+# rocksdb
+[dependencies.rocksdb]
+version = "0.13.0"
+# git = "https://github.com/tikv/rust-rocksdb.git"
+# rev = "6191b41497ee35234b1a2c1bbd6691787fe65537"
+
